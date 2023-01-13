@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int a,basamakDegeri,toplam=0;
+        System.out.print("Sayı Giriniz :");
+        a = input.nextInt();
+        while (a!=0){
+            basamakDegeri=a%10;
+            toplam+=basamakDegeri;
+            a/=10;
+        }
+        System.out.println("Basamak Sayılarının Toplamı: "+ toplam);
+        }
+    }
